@@ -1,5 +1,15 @@
+
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: "/Instagram_ui_tailwind/"
+  
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        nested: resolve(__dirname, 'dark.html')
+      }
+    }
+  }
 })
