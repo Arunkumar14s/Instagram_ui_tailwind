@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'dark.html')
+        main: resolve("/Instagram_ui_tailwind/", 'index.html'),
+        nested: resolve("/Instagram_ui_tailwind/", 'dark.html')
       }
     }
   }
